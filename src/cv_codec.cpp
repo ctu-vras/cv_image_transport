@@ -16,6 +16,9 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs/imgcodecs.hpp>
+#if CV_VERSION_MAJOR < 4
+#include <opencv2/imgcodecs/imgcodecs_c.h>
+#endif
 #include <sensor_msgs/CompressedImage.h>
 #include <sensor_msgs/Image.h>
 #include <sensor_msgs/image_encodings.h>
@@ -224,7 +227,11 @@ cras::expected<void, std::string> CVCodec::validateImageFormat(const CVTransport
 {
   const auto f = format.formatString.c_str();
 
+#if CV_VERSION_MAJOR >= 4
   if (!cv::haveImageWriter("." + format.formatString))
+#else
+  if (!cvHaveImageWriter((std::string(".") + format.formatString).c_str()))
+#endif
     return cras::make_unexpected(cras::format("OpenCV cannot encode images with format %s.", f));
 
   char dataType = 'U';
