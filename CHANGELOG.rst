@@ -5,8 +5,8 @@
 Changelog for package cv_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2025-07-28)
+------------------
 * Compatibility with OpenCV 3.2 .
 * Contributors: Martin Pecka
 
