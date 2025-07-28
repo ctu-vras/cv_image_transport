@@ -2,7 +2,7 @@
 Changelog for package cv_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2025-07-28)
+------------------
 * Initial commit.
 * Contributors: Martin Pecka
