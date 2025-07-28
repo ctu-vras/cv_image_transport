@@ -1,0 +1,21 @@
+.. SPDX-License-Identifier: BSD-3-Clause
+.. SPDX-FileCopyrightText: Czech Technical University in Prague
+
+.. cv_image_transport documentation master file
+
+Welcome to cv_image_transport documentation!
+=============================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Modules:
+
+   cv_image_transport
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
