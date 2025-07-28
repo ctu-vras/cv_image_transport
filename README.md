@@ -5,6 +5,9 @@ SPDX-FileCopyrightText: Czech Technical University in Prague
 
 # OpenCV Image Transport
 
+[![ROS Melodic](https://img.shields.io/badge/ros_|_melodic-v1.0.2-blue)](https://img.shields.io/badge/ros_|_melodic-v1.0.2-blue)
+[![ROS Noetic](https://img.shields.io/badge/ros_|_noetic-v1.0.2-blue)](https://img.shields.io/badge/ros_|_noetic-v1.0.2-blue)
+
 This package provides ROS image transport "cv" which compresses images using OpenCV `imencode/imdecode` functions.
 
 The `data` field of the `CompressedImage` messages can be directly stored as image files of the corresponding type and interpreted by other programs.
